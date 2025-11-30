@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
-import { useLocalStorage } from '../composables/useLocalStorage'
+import { useLocalStorage } from '../stores/useLocalStorage'
 
 export const useTaskStore = defineStore('tasks', () => {
     const { value: tasks, save: saveTasks } = useLocalStorage('tasks', [])
